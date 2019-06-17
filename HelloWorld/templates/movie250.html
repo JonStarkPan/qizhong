@@ -1,0 +1,22 @@
+{%extends "douban.html" %}
+ 
+{% block mainbody %}
+<center>
+<table class="table table-bordered"  style="width: 50%">
+    <thead>
+      <tr class="danger">
+        <th>序号</th>
+        <th>电影名</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for line in movelist %}
+      <tr class="success">
+        <td>{{line.id}}</td>
+        <td>{{line.movie_name}}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</center>
+{% endblock %}

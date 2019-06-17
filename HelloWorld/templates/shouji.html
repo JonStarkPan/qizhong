@@ -1,0 +1,26 @@
+{%extends "jingdong.html" %}
+ 
+{% block mainbody %}
+<center>
+    <table class="table table-bordered"  style="width: 70%">
+        <thead>
+            <tr class="success">
+            <th>地址</th>
+            <th>价格</th>
+            <th>型号</th>
+            <th>评论</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for line in movelist %}
+            <tr class="warning">
+            <td>{{line.link}}</td>
+            <td>{{line.price}}</td>
+            <td>{{line.name}}</td>
+            <td>{{line.comment}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</center>
+{% endblock %}

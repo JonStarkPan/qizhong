@@ -18,5 +18,7 @@ from . import view,testdb
  
 urlpatterns = [
 
-    url(r'^$', testdb.testdb)
+    url(r'^$',view.hello),
+    url(r'shouji/',view.jdsj),
+    url(r'movie250/',view.dbdy)
 ]
